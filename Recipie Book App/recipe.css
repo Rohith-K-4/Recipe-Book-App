@@ -1,0 +1,160 @@
+/* Reset some default styles */
+body, h1, h2, h3, ul, ol, li, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+body {
+    background-image: url('https://img.freepik.com/premium-photo/colorful-various-herbs-spices-cooking-dark-background_370312-476.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0; /* Remove default margin for the body */
+    padding: 0; /* Remove default padding for the body */
+}
+
+
+/* Header styling */
+header {
+    background-color: #5900ff;
+    color: white;
+    text-align: justify;
+    padding: 20px 0;
+    background-image: url('header-background.jpg'); 
+    background-size: cover;
+}
+
+
+
+/* Adjust the layout of the search container */
+.search-container {
+    display: flex;
+    justify-content: flex-end; /* Move content to the right */
+    align-items: center; /* Vertically align content */
+}
+
+#recipeSearch {
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px; /* Add some spacing between the input and button */
+}
+
+#recipeSearch + button {
+    font-size: 16px;
+    padding: 10px 20px; /* Add padding to the button for better appearance */
+}
+
+
+main {
+    display: flex; /* Use flexbox to create a two-column layout */
+    flex-wrap: wrap; /* Allow content to wrap to the next line on smaller screens */
+    justify-content: space-between; /* Add space between columns */
+    max-width: 1100px; /* Adjust the maximum width as needed */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: transparent;
+}
+
+.recipe {
+    flex: 0 0 calc(50% - 10px); /* Set the width of each recipe section to 50% with some spacing */
+    margin-bottom: 20px; /* Add some margin between recipe sections */
+}
+
+.recipe img {
+    width: 70%; /* Ensure the image fills its container */
+    height: 200px; /* Set a fixed height for all images (adjust as needed) */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+.recipe h2 a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.recipe h2 a:hover {
+    text-decoration: underline;
+}
+
+.recipe h3 {
+    font-size: 20px;
+    margin-top: 10px;
+    color:white;
+}
+
+.recipe ul, .recipe ol {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.recipe li {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color:white;
+}
+
+/* Add more styles as needed */
+/* Adjust the layout of the header */
+header {
+    display: flex;
+    justify-content: space-between; /* Move content to the right and left */
+    align-items: center; /* Vertically align content */
+    margin-top: 20px; /* Add some top margin to the header */
+}
+
+#recipeSearch {
+    padding: 10px;
+    font-size: 16px;
+}
+
+#recipeSearch + button {
+    font-size: 16px;
+    padding: 10px 20px; /* Add padding to the button for better appearance */
+}
+
+/* Adjust the layout of the navigation menu */
+nav {
+    flex-grow: 1; /* Expand and take available space */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    gap: 20px; /* Add some space between list items */
+}
+
+nav ul li {
+    font-size: 16px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white; /* Adjust the link color as needed */
+}
+/* Hide the recipe menu initially */
+/* Style for the menu button */
+#menuButton {
+    background-color: #fff5f500; /* Background color */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding for the button */
+    border: none; /* Remove button border */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    transition: background-color 0.3s; /* Add a smooth background color transition on hover */
+}
+
+/* Hover effect for the menu button */
+#menuButton:hover {
+    background-color: #c28c7f; /* Change background color on hover */
+}
+
+
+/* Add this CSS to hide the ingredients and instructions by default */
+.hidden {
+    display: none;
+}
+
